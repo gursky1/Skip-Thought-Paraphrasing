@@ -1,0 +1,10 @@
+
+*.zip
+Gutenberg/*
+.ipynb_checkpoints/*
+checkpoints/*
+cornell_movie_dialogs_corpus/*
+GPUBackup/*
+Gutenberg.zip
+TextCorpus.csv
+TextCorpusSample.csv
