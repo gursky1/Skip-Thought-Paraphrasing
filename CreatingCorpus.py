@@ -45,7 +45,7 @@ def clean_text(x):
 # Importing the list of texts from Gutenberg
 # Download link for Gutenberg dataset: 
 # https://drive.google.com/file/d/17WBziFbt9nhAW5iV-yHPHmCfquBPrjJO/view
-files = os.listdir('C:/Users/Jacob/Desktop/Paraphrase/Gutenberg/txt/')
+files = os.listdir('Gutenberg/txt/')
 
 # Creating the list of authors
 authors = [x.split('___')[0] for x in files]
@@ -56,7 +56,7 @@ df_list = []
 # Going through each document and tokenizing sentences
 for i in range(len(files)):
 	# Grabbing the text
-	text = open('C:/Users/Jacob/Desktop/Paraphrase/Gutenberg/txt/'+files[i], 'r', encoding='utf8').read()
+	text = open('Gutenberg/txt/'+files[i], 'r', encoding='utf8').read()
 	# Cleaning the text with our function
 	text = clean_text(text)
 	# Preparing current, post, and prev sentences for skip-thoughts
