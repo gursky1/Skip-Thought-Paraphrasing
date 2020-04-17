@@ -43,6 +43,8 @@ def clean_text(x):
 	return x
 
 # Importing the list of texts from Gutenberg
+# Download link for Gutenberg dataset: 
+# https://drive.google.com/file/d/17WBziFbt9nhAW5iV-yHPHmCfquBPrjJO/view
 files = os.listdir('C:/Users/Jacob/Desktop/Paraphrase/Gutenberg/txt/')
 
 # Creating the list of authors
